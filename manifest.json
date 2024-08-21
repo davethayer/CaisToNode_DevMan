@@ -1,0 +1,1611 @@
+{
+  "source_base_path": "C:/usr/src/CaisToNode/CaisToNodeCore/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "source_relative_path": "SHFB_output/object_model.chm",
+      "output": {
+        "resource": {
+          "relative_path": "SHFB_output/object_model.chm"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "SHFB_output/object_model.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "SHFB_output/object_model.pdf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Helpers.IEpaIdsToCais.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Helpers.IEpaIdsToCais.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.ICaisManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.ICaisManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IEmissionsProcessProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IEmissionsProcessProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IEmissionsUnitProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IEmissionsUnitProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IFacilitySiteProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IFacilitySiteProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.INodeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.INodeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IPointEmissionsProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IPointEmissionsProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IProcessPollutantAndControlsProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IProcessPollutantAndControlsProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.IReleasePointProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.IReleasePointProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.ISnapshotManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.ISnapshotManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.IConnectionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.IConnectionManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.ICrypto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.ICrypto.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.IExtractionCoordinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.IExtractionCoordinator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.IReporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.IReporter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.ISecrets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.ISecrets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.IXmlGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.IXmlGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ICaisToNodeSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ICaisToNodeSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ICaisValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ICaisValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IDesignRateUnitsMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IDesignRateUnitsMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.CaisIdRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.CaisIdRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.EpaIdUpdateRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.EpaIdUpdateRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.EpaIdsToCais.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.EpaIdsToCais.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.PrepareBackend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Helpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.AerrSourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.AerrSourceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisEmissionsProcessRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisEmissionsProcessRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisFacade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisFacade.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisProcessPollutantRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisProcessPollutantRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.CaisSQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.CaisSQL.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Cais.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Cais.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisCersRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisCersRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlMeasureLookupRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlMeasureLookupRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlMeasureRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlMeasureRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlPathDefinitionRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlPathDefinitionRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlPollutantRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisControlPollutantRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisEmissionsUnitRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisEmissionsUnitRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilityIdentificationRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilityIdentificationRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteAddressRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteAddressRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteControlRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteControlRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySitePathRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySitePathRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisNaicsLookupRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisNaicsLookupRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisProcessControlApproachRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisProcessControlApproachRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisReleasePointApportionmentRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisReleasePointApportionmentRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisReleasePointRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisReleasePointRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisSccLookupRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisSccLookupRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisUnitEmissionsProcessRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisUnitEmissionsProcessRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisUnitTypeLookupRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.EisUnitTypeLookupRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.Snapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.Snapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.SnapshotManagerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.SnapshotManagerExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.EisSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.EisSnapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.EmissionsProcessProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.EmissionsProcessProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.EmissionsUnitProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.EmissionsUnitProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.FacilitySiteProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.FacilitySiteProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.ProcessPollutantAndControlsProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.ProcessPollutantAndControlsProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.ReleasePointProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.ReleasePointProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.FacilityInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.FacilityInventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.DataCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.DataCategory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeBasicIdentificationRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeBasicIdentificationRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeCersRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeCersRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeControlMeasureRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeControlMeasureRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeControlPathDefinitionRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeControlPathDefinitionRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeControlPollutantRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeControlPollutantRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacade.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilityIdentificationRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilityIdentificationRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilityNAICSRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilityNAICSRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteAddressRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteAddressRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteControlRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteControlRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySitePathRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySitePathRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeGeographicCoordinateRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeGeographicCoordinateRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeProcessRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeProcessRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeRecordBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeRecordBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeReleasePointApportionmentRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeReleasePointApportionmentRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeReleasePointRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeReleasePointRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeReportingPeriodEmissionsRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeReportingPeriodEmissionsRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeReportingPeriodRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeReportingPeriodRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeSQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeSQL.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.NodeUnitRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.NodeUnitRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.SubmissionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.SubmissionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.Node.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.Node.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.PointEmissions.PointEmissionsProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.PointEmissions.PointEmissionsProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.PointEmissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.PointEmissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.ProcessorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.ProcessorBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.AesCrypto.AesCrypto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.AesCrypto.AesCrypto.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.AesCrypto.Secrets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.AesCrypto.Secrets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.AesCrypto.Secrets_Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.AesCrypto.Secrets_Template.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.AesCrypto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.AesCrypto.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.ConnectionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.ConnectionManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.ExtractionCoordinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.ExtractionCoordinator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.Issue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.Issue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.IssueMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.IssueMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.LogEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.LogEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.LogMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.LogMessage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.Reporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.Reporter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.Severity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.Severity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.Reporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.Reporter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.SettingsManager.IBootStrapSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.SettingsManager.IBootStrapSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.SettingsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.SettingsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.XmlGenerator.XmlGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.XmlGenerator.XmlGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.XmlGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.XmlGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EncryptText.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EncryptText.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/EncryptText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/EncryptText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/AerrSourceType.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/AerrSourceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/AppSettingsJson.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/AppSettingsJson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CaisPlantMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CaisPlantMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CaisProcessMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CaisProcessMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CaisProcessPollutantMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CaisProcessPollutantMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CaisStackMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CaisStackMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CaisUnitMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CaisUnitMapping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ConfigurationSettings.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ConfigurationSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ControlPath.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ControlPath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DevEnvironment.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DevEnvironment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EmissionsProcess.sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EmissionsProcess.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EmissionsUnit.sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EmissionsUnit.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlControls.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlControls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlEmissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlEmissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlFacilities.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlFacilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlProcesses.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlProcesses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlReleasePoints.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlReleasePoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/EtlUnits.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/EtlUnits.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/FacilitySite.sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/FacilitySite.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/MandatoryPrerequisites.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/MandatoryPrerequisites.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/OptionalParameters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/OptionalParameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/PotentialToEmit.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/PotentialToEmit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ProcessPollutant.sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ProcessPollutant.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Processing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Processing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleasePoint.sql.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleasePoint.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/SimplifiedCaisDataModel.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/SimplifiedCaisDataModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/SupportedEisProperties.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/SupportedEisProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/SupportedFacilityInventory.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/SupportedFacilityInventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/SupportedPointEmissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/SupportedPointEmissions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/EisXmlGeneratorUserManual.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "images/EisXmlGeneratorUserManual.pdf"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/computer_desktop_info.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/computer_desktop_info.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>ProcessPollutant.sql </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="ProcessPollutant.sql ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/computer_desktop_info.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/DevEnvironment.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="DevEnvironment.html" title="Development Environment" class="">Development Environment</a>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a class="">Algorithm</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="MandatoryPrerequisites.html" title="Mandatory Parameters" class="">Mandatory Parameters</a>
+                          </li>
+                          <li class="">
+                            <a href="OptionalParameters.html" title="Optional Parameters" class="">Optional Parameters</a>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="Processing.html" title="Processing Steps" class="">Processing Steps</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="EtlFacilities.html" title="Facilities" class="">Facilities</a>
+                                </li>
+                                <li class="">
+                                  <a href="EtlReleasePoints.html" title="Release Points" class="">Release Points</a>
+                                </li>
+                                <li class="">
+                                  <a href="EtlUnits.html" title="Units" class="">Units</a>
+                                </li>
+                                <li class="">
+                                  <a href="EtlProcesses.html" title="Processes" class="">Processes</a>
+                                </li>
+                                <li class="">
+                                  <a href="EtlControls.html" title="Controls" class="">Controls</a>
+                                </li>
+                                <li class="">
+                                  <a href="EtlEmissions.html" title="Emissions" class="">Emissions</a>
+                                </li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Configuration.html" title="Configuration" class="">Configuration</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="AppSettingsJson.html" title="Contents of appsettings.json" class="">Contents of appsettings.json</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SimplifiedCaisDataModel.html" title="CAIS to CERS data mapping" class="">CAIS to CERS data mapping</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="PotentialToEmit.html" title="Potential To Emit" class="">Potential To Emit</a>
+                                </li>
+                                <li class="">
+                                  <a href="AerrSourceType.html" title="AERR Source Type" class="">AERR Source Type</a>
+                                </li>
+                                <li class="">
+                                  <a href="FacilitySite.sql.html" title="FacilitySite.sql" class="">FacilitySite.sql</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="CaisUnitMapping.html" title="CAIS Point" class="">CAIS Point</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="EmissionsUnit.sql.html" title="EmissionsUnit.sql" class="">EmissionsUnit.sql</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="CaisProcessMapping.html" title="CAIS Process" class="">CAIS Process</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="EmissionsProcess.sql.html" title="EmissionsProcess.sql" class="">EmissionsProcess.sql</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="CaisProcessPollutantMapping.html" title="CAIS Process Pollutant" class="">CAIS Process Pollutant</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ControlPath.html" title="Control Path Implementation" class="">Control Path Implementation</a>
+                                </li>
+                                <li class="active">
+                                  <a href="ProcessPollutant.sql.html" title="ProcessPollutant.sql" class="active">ProcessPollutant.sql</a>
+                                </li>
+                              </ul>
+                          </li>
+                          <li class="">
+                            <span class="expand-stub"></span>
+                            <a href="CaisStackMapping.html" title="CAIS Stack" class="">CAIS Stack</a>
+
+                              <ul class="nav level3">
+                                <li class="">
+                                  <a href="ReleasePoint.sql.html" title="ReleasePoint.sql" class="">ReleasePoint.sql</a>
+                                </li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SupportedEisProperties.html" title="Supported CERS Data Elements" class="">Supported CERS Data Elements</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SupportedFacilityInventory.html" title="Supported CERS Facility Inventory Elements" class="">Supported CERS Facility Inventory Elements</a>
+                          </li>
+                          <li class="">
+                            <a href="SupportedPointEmissions.html" title="Supported Point Emissions Elements" class="">Supported Point Emissions Elements</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="processpollutantsql">ProcessPollutant.sql</h1>
+
+<p>Resource: <a href="../api/CaisToNodeCore.Models.Cais.CaisSQL.html#CaisToNodeCore_Models_Cais_CaisSQL_ProcessPollutant"><code>CaisToNodeCore.Models.Cais.CaisSQL.ProcessPollutant</code></a></p>
+<pre><code class="lang-sql">-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
+
+WITH ProcessPte as (SELECT prpoplt_id, pre_emis1 from cais.dbo.ProcessEmissions where pre_etype = 'POT' AND pre_emun1 = 'TY' )
+, ProcessLimit as (SELECT prpoplt_id, pre_emis1 from cais.dbo.ProcessEmissions where pre_etype = 'ALL' AND pre_emun1 = 'TY' )
+, UnitPte as (SELECT poh_id, plt_id, phe_emis1 from cais.dbo.poi_emis where phe_etype = 'POT' AND phe_emun1 = 'TY' )
+, UnitLimit as (SELECT poh_id, plt_id, phe_emis1 from cais.dbo.poi_emis where phe_etype = 'ALL' AND phe_emun1 = 'TY' )
+, InvPlYr as (SELECT pla_id, Max(plyear) as plyear FROM cais.dbo.plyear WHERE plyear &lt;= @InventoryYear GROUP BY pla_id)
+, InvPlYrId as ( SELECT PY.pla_id, PY.plyear_id from cais.dbo.plyear as PY join InvPlYr as IY on PY.pla_id = IY.pla_id and PY.plyear = IY.plyear)
+SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
+            + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
+       , PL.PLA_A_CNTY AS CountyFIPSCode
+       , PL.PLA_A_CNTY + '-' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4)
+            + '-' + RIGHT('000' + Ltrim(Rtrim(PT.POI_A_PNT)), 3) AS UnitIdentifier
+       , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)),4) 
+            + '-' + RIGHT('000' + LTRIM(RTRIM(PT.POI_A_PNT)),3) + '-' 
+            + RIGHT('00' + LTRIM(RTRIM(PR.pro_afsid)), 2) AS ProcessIdentifier
+       , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)),4) 
+            + '-S' + RIGHT('000' + LTRIM(RTRIM(ST.stk_afsid)),3) AS ReleasePointIdentifier
+       , RTRIM(CT.nei_code) AS PollutantCode
+       , RTRIM(PL.PLA_NAME) AS FacilitySiteName
+       , PP.prp_ceqeff AS PercentControlMeasuresReductionEfficiency
+       , COALESCE(CE1.code_afs,'000') AS ControlMeasureCodePrimary
+       , CASE WHEN CE1.code_afs &lt;&gt; CE2.code_afs THEN CE2.code_afs ELSE '000' END
+            AS ControlMeasureCodeSecondary
+       , CAST(SUM(PE.pre_emis1) AS DECIMAL(12,4)) AS TotalEmissions
+       , MC.afs_method AS EmissionCalculationMethodCode
+       , PT.POI_TYPE AS PtsPointTypeCode
+       , CAST(MAX(PTE.phe_emis1) AS DECIMAL(12,4)) AS UnitPte
+       , CAST(MAX(LIM.phe_emis1) AS DECIMAL(12,4)) AS UnitLimit
+       , CAST(SUM(PPT.pre_emis1) AS DECIMAL(12,4)) AS ProcessPte
+       , CAST(SUM(PPL.pre_emis1) AS DECIMAL(12,4)) AS ProcessLimit
+       , MAX(PH.poh_hryear) AS UnitHoursPerYear
+FROM cais.dbo.PointHis AS PH
+    JOIN CAIS.dbo.Point AS PT
+    ON PT.POI_ID = PH.poi_id
+    JOIN InvPlYrId as PY
+    ON PH.plyear_id = PY.plyear_id
+    JOIN CAIS.dbo.Plant AS PL
+    ON PL.PLA_ID = py.pla_id
+    JOIN CAIS..process AS PR
+    ON PR.poh_id = PH.poh_id
+    LEFT JOIN dbo.Stacks AS ST
+    ON PR.stkyear_id = ST.stkyear_id
+    JOIN dbo.pr_pol AS PP
+    ON PP.pro_id = PR.pro_id
+    JOIN dbo.pr_emis AS PE
+    ON PP.prpoplt_id = PE.prpoplt_id
+    LEFT JOIN ProcessPte AS PPT
+    ON PP.prpoplt_id = PPT.prpoplt_id
+    LEFT JOIN ProcessLimit AS PPL
+    ON PP.prpoplt_id = PPL.prpoplt_id
+    LEFT JOIN dbo.cas_tbl AS CT
+    ON PP.plt_id = CT.Plt_ID
+    LEFT JOIN dbo.r_method AS MC
+    ON MC.method = PE.pre_emmc1
+    LEFT JOIN dbo.r_cequip AS CE1
+    ON CE1.code = PP.prp_priceq
+    LEFT JOIN dbo.r_cequip AS CE2
+    ON CE2.code = PP.prp_secceq
+    LEFT JOIN UnitPte AS PTE
+    ON PTE.poh_id = PH.poh_id
+        AND PTE.plt_id = PP.plt_id
+    LEFT JOIN UnitLimit AS LIM
+    ON LIM.poh_id = PH.poh_id
+        AND LIM.plt_id = PP.plt_id
+WHERE PL.PLA_A_CNTY NOT IN ('000', '778', '888')
+    AND COALESCE(CT.nei_code, '') != ''
+    AND PE.pre_etype = 'EST'
+    AND PE.pre_emmc1 NOT IN ('7', '7A')
+    AND PE.pre_emis1 &gt; 0 
+
+GROUP BY PL.PLA_A_CNTY, PL.PLA_A_PLNT, PT.POI_A_PNT, PT.POI_TYPE, PR.pro_afsid, ST.stk_afsid, PL.PLA_NAME, PP.prp_ceqeff, CE1.code_afs, CE2.code_afs, CT.nei_code, MC.afs_method
+
+ORDER BY ProcessIdentifier, PollutantCode
+</code></pre>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
