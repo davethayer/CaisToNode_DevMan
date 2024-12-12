@@ -136,6 +136,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          </li>
+                          <li class="">
                             <span class="expand-stub"></span>
                             <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
 
@@ -267,6 +270,7 @@ The user settings folder is located under the user's <environmentvariable>APPDAT
     &quot;LongitudeMin&quot;: -109.5,
     &quot;LongitudeMax&quot;: -101.5,
     &quot;LongitudeDefault&quot;: -105.5,
+    &quot;StackCoordinateOffsetMax&quot;: 0.003,
     &quot;StackFlowRateMin&quot;: 0.1,
     &quot;StackFlowRateMax&quot;: 12000000,
     &quot;StackTemperatureMin&quot;: 30,
@@ -326,7 +330,7 @@ The user settings folder is located under the user's <environmentvariable>APPDAT
     &quot;ValidStackTypeCodes&quot;: &quot;1 2 3 4 5 6 7 8 9&quot;,
     &quot;FugitiveStackTypeCode&quot;: &quot;1&quot;,
     &quot;DefaultStackTypeCode&quot;: &quot;2&quot;,
-    &quot;UnitTypesExpectingDesignRate&quot;: &quot;100 120 140 160 180&quot;,
+    &quot;UnitTypesExpectingDesignRate&quot;: &quot;100 120 140 160 180 210 213 214 200 270&quot;,
     &quot;OperatingStatus&quot;: {
       &quot;ShutDownTemporary&quot;: &quot;TS&quot;,
       &quot;ShutDownPermanent&quot;: &quot;PS&quot;,
@@ -357,8 +361,28 @@ The user settings folder is located under the user's <environmentvariable>APPDAT
     &quot;PollutantCodePM25&quot;: &quot;PM25-PRI&quot;,
     &quot;ReportingPeriodTypeCodeAnnual&quot;: &quot;A&quot;,
     &quot;EmissionOperatingTypeCodeRoutine&quot;: &quot;R&quot;,
-    &quot;EmissionsUnitofMeasureCodeTon&quot;: &quot;TON&quot;
+    &quot;EmissionsUnitofMeasureCodeTon&quot;: &quot;TON&quot;,
+    &quot;NaicsTypeCodePrimary&quot;: &quot;PRIMARY&quot;,
+    &quot;NaicsTypeCodeSecondary&quot;: &quot;SECONDARY&quot;
   },
+  &quot;RequiredDesignRateUnitTypes&quot;: [
+    {
+      &quot;NaicsCode&quot;: &quot;Any&quot;,
+      &quot;UnitTypes&quot;: &quot;100 120 140 160 180&quot;
+    },
+    {
+      &quot;NaicsCode&quot;: &quot;32731&quot;,
+      &quot;UnitTypes&quot;: &quot;210 213 214&quot;
+    },
+    {
+      &quot;NaicsCode&quot;: &quot;32721&quot;,
+      &quot;UnitTypes&quot;: &quot;200&quot;
+    },
+    {
+      &quot;NaicsCode&quot;: &quot;56221&quot;,
+      &quot;UnitTypes&quot;: &quot;270&quot;
+    }
+  ],
   &quot;DesignRateUnitsMap&quot;: [
     {
       &quot;CaisUnitCode&quot;: &quot;A&quot;,

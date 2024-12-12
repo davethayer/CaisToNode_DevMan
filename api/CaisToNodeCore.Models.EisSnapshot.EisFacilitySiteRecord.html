@@ -171,6 +171,9 @@
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.html" title="INaaParameters" class="">INaaParameters</a>
                           </li>
                           <li class="">
+                            <a href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html" title="IRequiredDesignRateUnitTypes" class="">IRequiredDesignRateUnitTypes</a>
+                          </li>
+                          <li class="">
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html" title="ISettingsManager" class="">ISettingsManager</a>
                           </li>
                         </ul>
@@ -683,15 +686,15 @@ Node column: AREA_WTIN_PERM.</p>
   </table>
 
 
-  <a id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitofMeasureCode_" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode*"></a>
-  <h4 id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitofMeasureCode" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode">AreaWithinPerimeterUnitofMeasureCode</h4>
+  <a id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitOfMeasureCode_" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode*"></a>
+  <h4 id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitOfMeasureCode" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode">AreaWithinPerimeterUnitOfMeasureCode</h4>
   <div class="markdown level1 summary"><p>Gets the code that identifies the unit of measure for the area within the event perimeter.
 Node column: AREA_WTIN_PERM_UNT_MEAS_CODE.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AreaWithinPerimeterUnitofMeasureCode { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string AreaWithinPerimeterUnitOfMeasureCode { get; init; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -1325,6 +1328,35 @@ Node column: LONG_MEAS.</p>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string LongitudeMeasure { get; init; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_OwnerName_" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName*"></a>
+  <h4 id="CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_OwnerName" data-uid="CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName">OwnerName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the facility owner name
+Node Column CERS_AFFL_ORG.ORG_FORMAL_NAME.
+XML Path  FacilitySiteAffiliation.AffiliationOrganization.OrganizationFormalName
+where FacilitySiteAffiliation.AffiliationTypeCode = &quot;OW&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OwnerName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">

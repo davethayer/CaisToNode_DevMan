@@ -171,6 +171,9 @@
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.html" title="INaaParameters" class="">INaaParameters</a>
                           </li>
                           <li class="">
+                            <a href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html" title="IRequiredDesignRateUnitTypes" class="">IRequiredDesignRateUnitTypes</a>
+                          </li>
+                          <li class="">
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html" title="ISettingsManager" class="">ISettingsManager</a>
                           </li>
                         </ul>
@@ -670,6 +673,32 @@ public string CountyFipsCode { get; set; }</code></pre>
   </table>
 
 
+  <a id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteDescription_" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription*"></a>
+  <h4 id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteDescription" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription">FacilitySiteDescription</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the facility description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FacilitySiteDescription { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteIdentifier_" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteIdentifier*"></a>
   <h4 id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteIdentifier" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteIdentifier">FacilitySiteIdentifier</h4>
   <div class="markdown level1 summary"><p>Gets or sets the Agency facility ID, (ICIS Air format).</p>
@@ -677,7 +706,8 @@ public string CountyFipsCode { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RegularExpression(&quot;CO00000008(([01]\\d\\d)|(777))0((\\d{4})|([9A-F][0-9A-F]{3}))&quot;)]
+    <pre><code class="lang-csharp hljs">[XLColumn(Order = 1)]
+[RegularExpression(&quot;CO00000008(([01]\\d\\d)|(777))0((\\d{4})|([9A-F][0-9A-F]{3}))&quot;)]
 public string FacilitySiteIdentifier { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -705,6 +735,32 @@ public string FacilitySiteIdentifier { get; set; }</code></pre>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string FacilitySiteName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteOwnerName_" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName*"></a>
+  <h4 id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteOwnerName" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName">FacilitySiteOwnerName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the site owner name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FacilitySiteOwnerName { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -995,13 +1051,40 @@ public decimal LongitudeMeasure { get; set; }</code></pre>
 
   <a id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCode_" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCode*"></a>
   <h4 id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCode" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCode">NAICSCode</h4>
-  <div class="markdown level1 summary"><p>Gets or sets facility NAICS code.</p>
+  <div class="markdown level1 summary"><p>Gets or sets facility primary NAICS code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[RegularExpression(&quot;\\d{6}&quot;)]
 public string NAICSCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCodeSecondary_" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary*"></a>
+  <h4 id="CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCodeSecondary" data-uid="CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary">NAICSCodeSecondary</h4>
+  <div class="markdown level1 summary"><p>Gets or sets facility secondary NAICS code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RegularExpression(&quot;\\d{6}&quot;)]
+public string NAICSCodeSecondary { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">

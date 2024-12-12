@@ -136,6 +136,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          </li>
+                          <li class="">
                             <span class="expand-stub"></span>
                             <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
 
@@ -222,42 +225,70 @@
 
 <p>The first line may be uncommented to facilitate interactive testing of the query:</p>
 <p>Resource: <a href="../api/CaisToNodeCore.Models.Cais.CaisSQL.html#CaisToNodeCore_Models_Cais_CaisSQL_FacilitySite"><code>CaisToNodeCore.Models.Cais.CaisSQL.FacilitySite</code></a></p>
-<pre><code class="lang-sql">-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
-SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
-            + RIGHT('000' + Trim(PL.PLA_A_PLNT), 4) AS FacilitySiteIdentifier
-       , PL.PLA_A_CNTY AS CountyFipsCode
-       , Trim(PL.PLA_NAME) AS FacilitySiteName
-       , PL.PLA_OPSTAT AS CaisPlantOperatingStatus
-       , Trim(PL.PLA_NAICSP) AS NAICSCode
-       , Trim(AD.Addr1) AS LocationAddressText
-       , Trim(AD.Addr2) AS SupplementalLocationText
-       , Trim(COALESCE(CI.CIT_NAME, AD.City)) AS LocalityName
-       , Trim(AD.State) AS LocationAddressStateCode
-       , Trim(AD.Zip) AS LocationAddressPostalCode
-       , Coalesce(AD.CountyCd, PL.PLA_A_CNTY) AS LocationAddressCountyFipsCode
-       , -(Floor(PL.pla_long / 10000) + (Floor(PL.pla_long / 100) % 100) / 60.0 + (PL.pla_long % 100) / 3600.0) AS LongitudeMeasure
-       , Floor(PL.pla_lat / 10000) + (Floor(PL.pla_lat / 100) % 100) / 60.0 + (PL.pla_lat % 100) / 3600.0 AS LatitudeMeasure
-   FROM CAIS..vPlantCMS AS PL
-    INNER JOIN CAIS..AddrPla AS ADP
-     ON  PL.Pla_ID = ADP.Pla_ID
+<pre><code class="lang-sql">-- FacliltySite.sql
+--DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1;-- Uncomment for testing
+DECLARE @PlantLocTypeId INT = (
+        SELECT Type_ID
+        FROM CAIS..ContactType AS CT
+        WHERE TypeCode = 'PLNTLOC'
+            AND ActiveFl = 1
+        );
+
+WITH CurrentOwner
+AS (
+    SELECT ow.Pla_ID
+        , TRIM(co.CMP_Name) AS OwnerName
+    FROM cais.dbo.Company AS co
+    JOIN cais.dbo.PlaOwner AS ow
+        ON ow.Cmp_ID = co.CMP_ID
+    WHERE ow.CurrOwnFl = 1
+    )
+    , LegitCounties
+AS (
+    SELECT COU_FIPS
+    FROM CAIS..COUNTY
+    WHERE COU_FIPS = COU_CODE -- No land development pseudo-counties
+        AND COU_FIPS NOT IN ('000', '888')
+    )
+    , LocationAddresses
+AS (
+    SELECT ADP.Pla_ID
+        , Trim(AD.Addr1) AS LocationAddressText
+        , Trim(AD.Addr2) AS SupplementalLocationText
+        , Trim(COALESCE(CI.CIT_NAME, AD.City)) AS LocalityName
+        , Trim(AD.STATE) AS LocationAddressStateCode
+        , Trim(AD.Zip) AS LocationAddressPostalCode
+        , AD.CountyCd AS CountyCode
+    FROM CAIS..AddrPla AS ADP
     INNER JOIN CAIS..Addresses AS AD
-     ON  AD.Address_ID = ADP.Address_ID
+        ON AD.Address_ID = ADP.Address_ID
     LEFT JOIN CAIS..CITY AS CI
-     ON  CI.CIT_FIPS = AD.CityCd
-    LEFT JOIN CAIS..COUNTY AS CO
-     ON  CO.COU_CODE = PL.PLA_A_CNTY
-    LEFT JOIN CAIS..plyear AS PY
-         ON  pl.pla_id = PY.pla_id
-        AND PY.plyear = (SELECT MAX(PY1.plyear)
-                        FROM   CAIS..plyear AS PY1
-                        WHERE  PY1.pla_id = PL.pla_id
-                            AND PY1.plyear &lt;= @InventoryYear)
-WHERE  CO.COU_FIPS = CO.COU_AIRSID -- No land development pseudo-counties
-    AND PL.PLA_A_CNTY NOT IN ( '000', '888' ) -- No other pseudo-counties
-    AND ADP.Type_ID = (SELECT Type_ID
-    FROM CAIS..ContactType AS CT
-    WHERE  TypeCode = 'PLNTLOC'
-        AND ActiveFl = 1)
+        ON CI.CIT_FIPS = AD.CityCd
+    WHERE ADP.Type_ID = @PlantLocTypeId
+    )
+SELECT 'CO00000008' + PL.PLA_A_CNTY + '0' + RIGHT('000' + Trim(PL.PLA_A_PLNT), 4) AS FacilitySiteIdentifier
+    , PL.PLA_A_CNTY AS CountyFipsCode
+    , Trim(PL.PLA_NAME) AS FacilitySiteName
+    , OW.OwnerName AS FacilitySiteOwnerName
+    , PL.PLA_OPSTAT AS CaisPlantOperatingStatus
+    , Trim(PL.PLA_DESC) AS FacilitySiteDescription
+    , Trim(PL.PLA_NAICSP) AS NAICSCode
+    , Trim(PL.PLA_NAICSS) AS NAICSCodeSecondary
+    , AD.LocationAddressText
+    , AD.SupplementalLocationText
+    , AD.LocalityName
+    , AD.LocationAddressStateCode
+    , AD.LocationAddressPostalCode
+    , Coalesce(AD.CountyCode, PL.PLA_A_CNTY) AS LocationAddressCountyFipsCode
+    , - (Floor(PL.pla_long / 10000) + (Floor(PL.pla_long / 100) % 100) / 60.0 + (PL.pla_long % 100) / 3600.0) AS LongitudeMeasure
+    , Floor(PL.pla_lat / 10000) + (Floor(PL.pla_lat / 100) % 100) / 60.0 + (PL.pla_lat % 100) / 3600.0 AS LatitudeMeasure
+FROM CAIS..vPlantCMS AS PL
+LEFT JOIN LocationAddresses AD
+    ON AD.Pla_ID = PL.PLA_ID
+LEFT JOIN CurrentOwner AS OW
+    ON OW.Pla_ID = PL.PLA_ID
+INNER JOIN LegitCounties AS CO
+    ON PLA_A_CNTY = CO.COU_FIPS
 ORDER BY FacilitySiteIdentifier ASC
 </code></pre>
 </article>

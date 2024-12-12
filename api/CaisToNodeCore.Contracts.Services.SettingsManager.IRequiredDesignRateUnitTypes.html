@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class LogMessage
+      <title>Interface IRequiredDesignRateUnitTypes
  </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class LogMessage
+      <meta name="title" content="Interface IRequiredDesignRateUnitTypes
  ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -170,8 +170,8 @@
                           <li class="">
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.html" title="INaaParameters" class="">INaaParameters</a>
                           </li>
-                          <li class="">
-                            <a href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html" title="IRequiredDesignRateUnitTypes" class="">IRequiredDesignRateUnitTypes</a>
+                          <li class="active">
+                            <a href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html" title="IRequiredDesignRateUnitTypes" class="active">IRequiredDesignRateUnitTypes</a>
                           </li>
                           <li class="">
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html" title="ISettingsManager" class="">ISettingsManager</a>
@@ -481,8 +481,8 @@
                           <li class="">
                             <a href="CaisToNodeCore.Services.Reporter.LogEntry.html" title="LogEntry" class="">LogEntry</a>
                           </li>
-                          <li class="active">
-                            <a href="CaisToNodeCore.Services.Reporter.LogMessage.html" title="LogMessage" class="active">LogMessage</a>
+                          <li class="">
+                            <a href="CaisToNodeCore.Services.Reporter.LogMessage.html" title="LogMessage" class="">LogMessage</a>
                           </li>
                           <li class="">
                             <a href="CaisToNodeCore.Services.Reporter.Reporter.html" title="Reporter" class="">Reporter</a>
@@ -520,82 +520,76 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CaisToNodeCore.Services.Reporter.LogMessage">
+            <article class="content wrap" id="_content" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes">
 
 
 
-  <h1 id="CaisToNodeCore_Services_Reporter_LogMessage" data-uid="CaisToNodeCore.Services.Reporter.LogMessage" class="text-break">Class LogMessage
+  <h1 id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes" class="text-break">Interface IRequiredDesignRateUnitTypes
 </h1>
-  <div class="markdown level0 summary"><p>A class to generate a log entry message.</p>
+  <div class="markdown level0 summary"><p>Represents unit types which may (depending on NAICS code) have mandatory design rates.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.messaging.messages.valuechangedmessage-1">ValueChangedMessage</a>&lt;<a class="xref" href="CaisToNodeCore.Services.Reporter.LogEntry.html">LogEntry</a>&gt;</div>
-    <div class="level2"><span class="xref">LogMessage</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/communitytoolkit.mvvm.messaging.messages.valuechangedmessage-1.value">ValueChangedMessage&lt;LogEntry&gt;.Value</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CaisToNodeCore.html">CaisToNodeCore</a>.<a class="xref" href="CaisToNodeCore.Services.html">Services</a>.<a class="xref" href="CaisToNodeCore.Services.Reporter.html">Reporter</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CaisToNodeCore.html">CaisToNodeCore</a>.<a class="xref" href="CaisToNodeCore.Contracts.html">Contracts</a>.<a class="xref" href="CaisToNodeCore.Contracts.Services.html">Services</a>.<a class="xref" href="CaisToNodeCore.Contracts.Services.SettingsManager.html">SettingsManager</a></h6>
   <h6><strong>Assembly</strong>: CaisToNodeCore.dll</h6>
-  <h5 id="CaisToNodeCore_Services_Reporter_LogMessage_syntax">Syntax</h5>
+  <h5 id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LogMessage : ValueChangedMessage&lt;LogEntry&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IRequiredDesignRateUnitTypes</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
 </h3>
 
 
-  <a id="CaisToNodeCore_Services_Reporter_LogMessage__ctor_" data-uid="CaisToNodeCore.Services.Reporter.LogMessage.#ctor*"></a>
-  <h4 id="CaisToNodeCore_Services_Reporter_LogMessage__ctor_CaisToNodeCore_Services_Reporter_LogEntry_" data-uid="CaisToNodeCore.Services.Reporter.LogMessage.#ctor(CaisToNodeCore.Services.Reporter.LogEntry)">LogMessage(LogEntry)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="CaisToNodeCore.Services.Reporter.LogMessage.html">LogMessage</a> class.</p>
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_NaicsCode_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_NaicsCode" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode">NaicsCode</h4>
+  <div class="markdown level1 summary"><p>Gets the NAICS code (key).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LogMessage(LogEntry logEntry)</code></pre>
+    <pre><code class="lang-csharp hljs">[RegularExpression(&quot;\\d{6}&quot;)]
+string NaicsCode { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="CaisToNodeCore.Services.Reporter.LogEntry.html">LogEntry</a></td>
-        <td><span class="parametername">logEntry</span></td>
-        <td><p>The message payload.</p>
-</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_NaicsCode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use &quot;Any&quot;, &quot;All&quot;, or &quot;*&quot; for universally required design rates.</p>
+</div>
+
+
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_UnitTypes_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_UnitTypes" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes">UnitTypes</h4>
+  <div class="markdown level1 summary"><p>Gets an array of unit type codes needing design rate for the given NAICS code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] UnitTypes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

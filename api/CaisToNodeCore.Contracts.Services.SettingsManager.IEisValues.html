@@ -171,6 +171,9 @@
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.html" title="INaaParameters" class="">INaaParameters</a>
                           </li>
                           <li class="">
+                            <a href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html" title="IRequiredDesignRateUnitTypes" class="">IRequiredDesignRateUnitTypes</a>
+                          </li>
+                          <li class="">
                             <a href="CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html" title="ISettingsManager" class="">ISettingsManager</a>
                           </li>
                         </ul>
@@ -676,7 +679,7 @@ string ControlMeasureCodeRegex { get; }</code></pre>
   <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_ControlMeasureLastYearColumn_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.ControlMeasureLastYearColumn*"></a>
   <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_ControlMeasureLastYearColumn" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.ControlMeasureLastYearColumn">ControlMeasureLastYearColumn</h4>
   <div class="markdown level1 summary"><p>Gets a the zero-based column index for the last inventory year
-in EIS NAICS code table reference CSV files.</p>
+in EIS control measure reference CSV files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1246,7 +1249,7 @@ int NaicsCodeColumn { get; }</code></pre>
 
   <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsLastYearColumn_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsLastYearColumn*"></a>
   <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsLastYearColumn" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsLastYearColumn">NaicsLastYearColumn</h4>
-  <div class="markdown level1 summary"><p>Gets a the zero-based column index for the last inventory year
+  <div class="markdown level1 summary"><p>Gets a zero-based column index for the last inventory year
 in EIS NAICS code table reference CSV files.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1266,6 +1269,60 @@ int NaicsLastYearColumn { get; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodePrimary_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodePrimary" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary">NaicsTypeCodePrimary</h4>
+  <div class="markdown level1 summary"><p>Gets the type code for primary NAICS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(Alias = &quot;LimitsAndDefaults.NaicsTypeCodePrimary&quot;)]
+string NaicsTypeCodePrimary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodeSecondary_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodeSecondary" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary">NaicsTypeCodeSecondary</h4>
+  <div class="markdown level1 summary"><p>Gets the type code for secondary NAICS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(Alias = &quot;LimitsAndDefaults.NaicsTypeCodeSecondary&quot;)]
+string NaicsTypeCodeSecondary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1434,6 +1491,32 @@ string ReportingPeriodTypeCodeAnnual { get; }</code></pre>
   </table>
 
 
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_RequiredDesignRateUnitTypes_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_RequiredDesignRateUnitTypes" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes">RequiredDesignRateUnitTypes</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of <a class="xref" href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html">IRequiredDesignRateUnitTypes</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IRequiredDesignRateUnitTypes&gt; RequiredDesignRateUnitTypes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html">IRequiredDesignRateUnitTypes</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_SccCategoryColumn_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.SccCategoryColumn*"></a>
   <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_SccCategoryColumn" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.SccCategoryColumn">SccCategoryColumn</h4>
   <div class="markdown level1 summary"><p>Gets a the zero-based column index for SCC category
@@ -1594,6 +1677,34 @@ string SourceClassificationCodeRegex { get; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_StackCoordinateOffsetMax_" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax*"></a>
+  <h4 id="CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_StackCoordinateOffsetMax" data-uid="CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax">StackCoordinateOffsetMax</h4>
+  <div class="markdown level1 summary"><p>Gets the maximum allowable difference in degrees for a stack
+latitude or longitude from the facility latitude or longitude.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Option(Alias = &quot;LimitsAndDefaults.StackCoordinateOffsetMax&quot;)]
+decimal StackCoordinateOffsetMax { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></td>
         <td></td>
       </tr>
     </tbody>

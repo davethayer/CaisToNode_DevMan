@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Processing Steps </title>
+      <title>CAIS to EIS Identifier Cross Reference </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Processing Steps ">
+      <meta name="title" content="CAIS to EIS Identifier Cross Reference ">
     
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
@@ -93,9 +93,9 @@
                           <li class="">
                             <a href="OptionalParameters.html" title="Optional Parameters" class="">Optional Parameters</a>
                           </li>
-                          <li class="active">
+                          <li class="">
                             <span class="expand-stub"></span>
-                            <a href="Processing.html" title="Processing Steps" class="active">Processing Steps</a>
+                            <a href="Processing.html" title="Processing Steps" class="">Processing Steps</a>
 
                               <ul class="nav level3">
                                 <li class="">
@@ -135,8 +135,8 @@
                       <a href="SimplifiedCaisDataModel.html" title="CAIS to CERS data mapping" class="">CAIS to CERS data mapping</a>
 
                         <ul class="nav level2">
-                          <li class="">
-                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          <li class="active">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="active">Identifier Cross Reference</a>
                           </li>
                           <li class="">
                             <span class="expand-stub"></span>
@@ -221,63 +221,76 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="processing-steps">Processing Steps</h1>
+<h1 id="cais-to-eis-identifier-cross-reference">CAIS to EIS Identifier Cross Reference</h1>
 
-<p>Processing is controlled by an instance of  <a href="../api/CaisToNodeCore.Contracts.Services.IExtractionCoordinator.html">IExtractionCoordinator</a>. To verify that <a href="MandatoryPrerequisites.html">mandatory parameters</a> are present,
-the ExtractionCoordinator can provide a list of <a href="../api/CaisToNodeCore.Contracts.Services.IExtractionCoordinator.html#CaisToNodeCore_Contracts_Services_IExtractionCoordinator_GetMissingPrerequisites">missing prerequisites</a>.</p>
-<p>Invoking the  <a href="../api/CaisToNodeCore.Services.ExtractionCoordinator.html#CaisToNodeCore_Services_ExtractionCoordinator_ExtractDataAsync">ExtractDataAsync()</a>
-method triggers the following steps:</p>
-<ol>
-<li>Check for <a href="../api/CaisToNodeCore.Contracts.Services.IExtractionCoordinator.html#CaisToNodeCore_Contracts_Services_IExtractionCoordinator_GetMissingPrerequisites">prerequisite files</a>, if any are missing report and abort.</li>
-<li>Create output folder containing timestamped name.</li>
-<li>Load data in parallel:
-<ul>
-<li>EIS snapshot data downloaded from EPA.
-<ul>
-<li>Reference value lookup tables for data validation:
-<ul>
-<li><a href="../api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html#CaisToNodeCore_Models_EisSnapshot_SnapshotManager_LoadValidSccCodes_System_String_">SCC Codes</a></li>
-<li><a href="../api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html#CaisToNodeCore_Models_EisSnapshot_SnapshotManager_LoadValidControlMeasureCodes_System_String_">Control Measure Codes</a></li>
-<li><a href="../api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html#CaisToNodeCore_Models_EisSnapshot_SnapshotManager_LoadValidNaicsCodes_System_String_">NAICS Codes</a></li>
-<li><a href="../api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html#CaisToNodeCore_Models_EisSnapshot_SnapshotManager_LoadValidUnitTypeCodes_System_String_">Unit Type Codes</a></li>
-</ul>
-</li>
-<li>Downloaded <a href="../api/CaisToNodeCore.Models.EisSnapshot.SnapshotManager.html#CaisToNodeCore_Models_EisSnapshot_SnapshotManager_LoadXmlAsync_System_String_">facility snapshot</a>
-XML data for determination of changed sources.</li>
-</ul>
-</li>
-<li>CAIS inventory data:
-<ul>
-<li><a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_FetchFacilitySiteAsync">FacilitySite</a></li>
-<li><a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_FetchReleasePointAsync">ReleasePoint</a></li>
-<li><a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_FetchEmissionsUnitAsync">EmissionsUnit</a></li>
-<li><a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_FetchEmissionsProcessAsync">EmissionsProcess</a></li>
-<li><a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_FetchProcessPollutantAsync">ProcessPollutant</a></li>
-</ul>
-</li>
-<li>Optional <a href="../api/CaisToNodeCore.Models.Cais.CaisManager.html#CaisToNodeCore_Models_Cais_CaisManager_LoadPlantIdListsFromXlsx_System_Collections_Generic_List_System_String__System_String_System_String_System_String_System_String_System_Int32_">Plant lists</a>
-from a Excel workbooks for inclusion or exclusion in the submittal.</li>
-</ul>
-</li>
-<li>Save <a href="../api/CaisToNodeCore.Services.Reporter.Reporter.html#CaisToNodeCore_Services_Reporter_Reporter_SaveObjectListsToXlsx__1___0_System_String_">Excel workbooks</a>
-containing downloaded CAIS and EIS tables.</li>
-<li>Sequentially transform CAIS data to <a href="SupportedEisProperties.html">corresponding EIS properties</a> and load Node facade tables:
-<ol>
-<li><a href="EtlFacilities.html">Facilities</a></li>
-<li><a href="EtlReleasePoints.html">ReleasePoints</a></li>
-<li><a href="EtlUnits.html">Units</a></li>
-<li><a href="EtlProcesses.html">Processes</a></li>
-<li><a href="EtlControls.html">Controls</a></li>
-<li><a href="EtlEmissions.html">Emissions</a></li>
-</ol>
-</li>
-<li>Save <a href="../api/CaisToNodeCore.Services.Reporter.Reporter.html#CaisToNodeCore_Services_Reporter_Reporter_SaveObjectListsToXlsx__1___0_System_String_">Excel workbooks</a>
-containing processed CAIS and Node tables.</li>
-<li>Save Node Facade tables as <a href="../api/CaisToNodeCore.Contracts.Services.IXmlGenerator.html">CERS XML</a>
-files. This step may be skipped to expedite QA-only (dry run) extraction.</li>
-<li>Save an <a href="../api/CaisToNodeCore.Services.Reporter.Reporter.html#CaisToNodeCore_Services_Reporter_Reporter_SaveReport_System_String_System_Object_">Excel workbook</a>
-containing log and QA report.</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>EIS Identifier</th>
+<th>Base CAIS IDs</th>
+<th>Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FacilityIdentification.FacilitySiteIdentifier</td>
+<td>County FIPS (<code>Plant.PLA_A_CNTY</code>): <em><strong>ccc</strong></em><br>Plant Number (<code>Plant.PLA_A_PLNT</code>): <em><strong>ffff</strong></em></td>
+<td><samp>CO00000008<em><strong>ccc</strong></em>0<em><strong>ffff</strong></em></samp></td>
+<td>This format is required by EPA for <a href="https://www.epa.gov/enviro/icis-air-overview">ICIS-AIR</a> compatibility.<br><br>APCD staff generally use a shorter &quot;AIRS ID&quot; (<samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em></samp>) format.</td>
+</tr>
+<tr>
+<td>ReleasePointIdentification.Identifier</td>
+<td>County FIPS (<code>Plant.PLA_A_CNTY</code>): <em><strong>ccc</strong></em><br>Plant Number (<code>Plant.PLA_A_PLNT</code>): <em><strong>ffff</strong></em><br>Stack Number (<code>stacks.stk_afsid</code>): <em><strong>sss</strong></em></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-S<em><strong>sss</strong></em></samp></td>
+<td>The release point identifier includes the letter 'S' to differentiate it from the unit identifier.</td>
+</tr>
+<tr>
+<td>UnitIdentification.Identifier</td>
+<td>County FIPS (<code>Plant.PLA_A_CNTY</code>): <em><strong>ccc</strong></em><br>Plant Number (<code>Plant.PLA_A_PLNT</code>): <em><strong>ffff</strong></em><br>Point Number (<code>Point.POI_A_PNT</code>): <em><strong>uuu</strong></em></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em></samp></td>
+<td></td>
+</tr>
+<tr>
+<td>ProcessIdentification.Identifier</td>
+<td>County FIPS (<code>Plant.PLA_A_CNTY</code>): <em><strong>ccc</strong></em><br>Plant Number (<code>Plant.PLA_A_PLNT</code>): <em><strong>ffff</strong></em><br>Point Number (<code>Point.POI_A_PNT</code>): <em><strong>uuu</strong></em><br>Process number (<code>process.pro_afsid</code>): <em><strong>pp</strong></em></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em>-<em><strong>pp</strong></em></samp></td>
+<td></td>
+</tr>
+<tr>
+<td>ReleasePointApportionmentIdentification.Identifier</td>
+<td>See <strong>ProcessIdentification.Identifier</strong></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em>-<em><strong>pp</strong></em></samp></td>
+<td>Same as <strong>ProcessIdentification.Identifier</strong></td>
+</tr>
+<tr>
+<td>ReleasePointApportionmentPathIdentification.Identifier</td>
+<td>See <strong>ProcessIdentification.Identifier</strong></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em>-<em><strong>pp</strong></em></samp></td>
+<td>Same as <strong>ProcessIdentification.Identifier</strong></td>
+</tr>
+<tr>
+<td>SiteControlIdentification.Identifier</td>
+<td><em><strong>ccc</strong></em><br>Plant Number (<code>Plant.PLA_A_PLNT</code>): <em><strong>ffff</strong></em><br>Point Number (<code>Point.POI_A_PNT</code>): <em><strong>uuu</strong></em><br>Process number (<code>process.pro_afsid</code>): <em><strong>pp</strong></em><br>Control type code (<code>pr_pol.prp_priceq, pr_pol.prp_secceq</code>): <em><strong>ttt</strong></em></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em>-<em><strong>pp</strong></em></samp>-<em><strong>ttt</strong></em></td>
+<td>In CAIS the control device is not a separate record type, it is treated as attribute to the process-pollutant record, which may have primary and secondary control codes.</td>
+</tr>
+<tr>
+<td>ControlPathDefinitionControlIdentification.Identifier</td>
+<td>See  <strong>SiteControlIdentification.Identifier</strong></td>
+<td></td>
+<td>Same as <strong>SiteControlIdentification.Identifier</strong></td>
+</tr>
+<tr>
+<td>ControlPathIdentification.Identifier</td>
+<td>See <strong>ProcessIdentification.Identifier</strong></td>
+<td><samp><em><strong>ccc</strong></em>-<em><strong>ffff</strong></em>-<em><strong>uuu</strong></em>-<em><strong>pp</strong></em></samp></td>
+<td>Same as <strong>ProcessIdentification.Identifier</strong></td>
+</tr>
+</tbody>
+</table>
+<p>In CAIS, the identifiers are unique within the containing entity, For example, the same plant number could occur in multiple counties, and the same process number could occur for processes under multiple units within a plant. Since CAIS generates IDs sequentially, this is a common occurrence.</p>
+<p>EIS identifiers have been constructed so that the identifier is unique within the State's inventory.</p>
 
 </article>
           </div>

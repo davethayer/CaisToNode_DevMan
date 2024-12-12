@@ -254,6 +254,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.yml",
       "output": {
         ".html": {
@@ -1438,6 +1448,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/FacilitySite.sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/IdentifierMapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/IdentifierMapping.html"
         }
       },
       "version": ""

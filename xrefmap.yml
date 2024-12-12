@@ -1698,6 +1698,32 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsLastYearColumn
   nameWithType: IEisValues.NaicsLastYearColumn
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary
+  name: NaicsTypeCodePrimary
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodePrimary
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary
+  nameWithType: IEisValues.NaicsTypeCodePrimary
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary*
+  name: NaicsTypeCodePrimary
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodePrimary_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodePrimary
+  nameWithType: IEisValues.NaicsTypeCodePrimary
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary
+  name: NaicsTypeCodeSecondary
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodeSecondary
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary
+  nameWithType: IEisValues.NaicsTypeCodeSecondary
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary*
+  name: NaicsTypeCodeSecondary
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_NaicsTypeCodeSecondary_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.NaicsTypeCodeSecondary
+  nameWithType: IEisValues.NaicsTypeCodeSecondary
 - uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.OperatingNotReporting
   name: OperatingNotReporting
   href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_OperatingNotReporting
@@ -1776,6 +1802,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.ReportingPeriodTypeCodeAnnual
   nameWithType: IEisValues.ReportingPeriodTypeCodeAnnual
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes
+  name: RequiredDesignRateUnitTypes
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_RequiredDesignRateUnitTypes
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes
+  nameWithType: IEisValues.RequiredDesignRateUnitTypes
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes*
+  name: RequiredDesignRateUnitTypes
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_RequiredDesignRateUnitTypes_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.RequiredDesignRateUnitTypes
+  nameWithType: IEisValues.RequiredDesignRateUnitTypes
 - uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.SccCategoryColumn
   name: SccCategoryColumn
   href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_SccCategoryColumn
@@ -1854,6 +1893,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.SourceClassificationCodeRegex
   nameWithType: IEisValues.SourceClassificationCodeRegex
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax
+  name: StackCoordinateOffsetMax
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_StackCoordinateOffsetMax
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax
+  nameWithType: IEisValues.StackCoordinateOffsetMax
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax*
+  name: StackCoordinateOffsetMax
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_StackCoordinateOffsetMax_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackCoordinateOffsetMax
+  nameWithType: IEisValues.StackCoordinateOffsetMax
 - uid: CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.StackDiameterMax
   name: StackDiameterMax
   href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IEisValues.html#CaisToNodeCore_Contracts_Services_SettingsManager_IEisValues_StackDiameterMax
@@ -2458,6 +2510,38 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Contracts.Services.SettingsManager.INaaParameters.PartialCounties
   nameWithType: INaaParameters.PartialCounties
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes
+  name: IRequiredDesignRateUnitTypes
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html
+  commentId: T:CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes
+  nameWithType: IRequiredDesignRateUnitTypes
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode
+  name: NaicsCode
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html#CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_NaicsCode
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode
+  nameWithType: IRequiredDesignRateUnitTypes.NaicsCode
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode*
+  name: NaicsCode
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html#CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_NaicsCode_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.NaicsCode
+  nameWithType: IRequiredDesignRateUnitTypes.NaicsCode
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes
+  name: UnitTypes
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html#CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_UnitTypes
+  commentId: P:CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes
+  nameWithType: IRequiredDesignRateUnitTypes.UnitTypes
+- uid: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes*
+  name: UnitTypes
+  href: api/CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.html#CaisToNodeCore_Contracts_Services_SettingsManager_IRequiredDesignRateUnitTypes_UnitTypes_
+  commentId: Overload:CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes
+  isSpec: "True"
+  fullName: CaisToNodeCore.Contracts.Services.SettingsManager.IRequiredDesignRateUnitTypes.UnitTypes
+  nameWithType: IRequiredDesignRateUnitTypes.UnitTypes
 - uid: CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager
   name: ISettingsManager
   href: api/CaisToNodeCore.Contracts.Services.SettingsManager.ISettingsManager.html
@@ -2920,6 +3004,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.NodeKey
   nameWithType: CaisEmissionsUnitRecord.NodeKey
+- uid: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment
+  name: UnitComment
+  href: api/CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.html#CaisToNodeCore_Models_Cais_CaisEmissionsUnitRecord_UnitComment
+  commentId: P:CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment
+  fullName: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment
+  nameWithType: CaisEmissionsUnitRecord.UnitComment
+- uid: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment*
+  name: UnitComment
+  href: api/CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.html#CaisToNodeCore_Models_Cais_CaisEmissionsUnitRecord_UnitComment_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitComment
+  nameWithType: CaisEmissionsUnitRecord.UnitComment
 - uid: CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.UnitDescription
   name: UnitDescription
   href: api/CaisToNodeCore.Models.Cais.CaisEmissionsUnitRecord.html#CaisToNodeCore_Models_Cais_CaisEmissionsUnitRecord_UnitDescription
@@ -3140,6 +3237,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilityCategoryCode
   nameWithType: CaisFacilitySiteRecord.FacilityCategoryCode
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription
+  name: FacilitySiteDescription
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteDescription
+  commentId: P:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription
+  nameWithType: CaisFacilitySiteRecord.FacilitySiteDescription
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription*
+  name: FacilitySiteDescription
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteDescription_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteDescription
+  nameWithType: CaisFacilitySiteRecord.FacilitySiteDescription
 - uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteIdentifier
   name: FacilitySiteIdentifier
   href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteIdentifier
@@ -3166,6 +3276,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteName
   nameWithType: CaisFacilitySiteRecord.FacilitySiteName
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName
+  name: FacilitySiteOwnerName
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteOwnerName
+  commentId: P:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName
+  nameWithType: CaisFacilitySiteRecord.FacilitySiteOwnerName
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName*
+  name: FacilitySiteOwnerName
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteOwnerName_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteOwnerName
+  nameWithType: CaisFacilitySiteRecord.FacilitySiteOwnerName
 - uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.FacilitySiteStatusCode
   name: FacilitySiteStatusCode
   href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_FacilitySiteStatusCode
@@ -3309,6 +3432,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCode
   nameWithType: CaisFacilitySiteRecord.NAICSCode
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary
+  name: NAICSCodeSecondary
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCodeSecondary
+  commentId: P:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary
+  nameWithType: CaisFacilitySiteRecord.NAICSCodeSecondary
+- uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary*
+  name: NAICSCodeSecondary
+  href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NAICSCodeSecondary_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NAICSCodeSecondary
+  nameWithType: CaisFacilitySiteRecord.NAICSCodeSecondary
 - uid: CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.NodeKeyFacilityInventory
   name: NodeKeyFacilityInventory
   href: api/CaisToNodeCore.Models.Cais.CaisFacilitySiteRecord.html#CaisToNodeCore_Models_Cais_CaisFacilitySiteRecord_NodeKeyFacilityInventory
@@ -3869,6 +4005,32 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.HasEmissions
   nameWithType: CaisReleasePointRecord.HasEmissions
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure
+  name: LatitudeMeasure
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_LatitudeMeasure
+  commentId: P:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure
+  nameWithType: CaisReleasePointRecord.LatitudeMeasure
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure*
+  name: LatitudeMeasure
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_LatitudeMeasure_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LatitudeMeasure
+  nameWithType: CaisReleasePointRecord.LatitudeMeasure
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure
+  name: LongitudeMeasure
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_LongitudeMeasure
+  commentId: P:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure
+  nameWithType: CaisReleasePointRecord.LongitudeMeasure
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure*
+  name: LongitudeMeasure
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_LongitudeMeasure_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.LongitudeMeasure
+  nameWithType: CaisReleasePointRecord.LongitudeMeasure
 - uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.NodeKey
   name: NodeKey
   href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_NodeKey
@@ -3895,6 +4057,32 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.PreferVelocity
   nameWithType: CaisReleasePointRecord.PreferVelocity
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment
+  name: ReleasePointComment
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_ReleasePointComment
+  commentId: P:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment
+  nameWithType: CaisReleasePointRecord.ReleasePointComment
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment*
+  name: ReleasePointComment
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_ReleasePointComment_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointComment
+  nameWithType: CaisReleasePointRecord.ReleasePointComment
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription
+  name: ReleasePointDescription
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_ReleasePointDescription
+  commentId: P:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription
+  nameWithType: CaisReleasePointRecord.ReleasePointDescription
+- uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription*
+  name: ReleasePointDescription
+  href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_ReleasePointDescription_
+  commentId: Overload:CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointDescription
+  nameWithType: CaisReleasePointRecord.ReleasePointDescription
 - uid: CaisToNodeCore.Models.Cais.CaisReleasePointRecord.ReleasePointExitGasFlowRateMeasure
   name: ReleasePointExitGasFlowRateMeasure
   href: api/CaisToNodeCore.Models.Cais.CaisReleasePointRecord.html#CaisToNodeCore_Models_Cais_CaisReleasePointRecord_ReleasePointExitGasFlowRateMeasure
@@ -4813,19 +5001,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsCode
   nameWithType: EisFacilityNaicsRecord.NaicsCode
-- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator
-  name: NaicsPrimaryIndicator
-  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilityNaicsRecord_NaicsPrimaryIndicator
-  commentId: P:CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator
-  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator
-  nameWithType: EisFacilityNaicsRecord.NaicsPrimaryIndicator
-- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator*
-  name: NaicsPrimaryIndicator
-  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilityNaicsRecord_NaicsPrimaryIndicator_
-  commentId: Overload:CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType
+  name: NaicsType
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilityNaicsRecord_NaicsType
+  commentId: P:CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType
+  nameWithType: EisFacilityNaicsRecord.NaicsType
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType*
+  name: NaicsType
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilityNaicsRecord_NaicsType_
+  commentId: Overload:CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType
   isSpec: "True"
-  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsPrimaryIndicator
-  nameWithType: EisFacilityNaicsRecord.NaicsPrimaryIndicator
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.NaicsType
+  nameWithType: EisFacilityNaicsRecord.NaicsType
 - uid: CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.XmlParentKey
   name: XmlParentKey
   href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilityNaicsRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilityNaicsRecord_XmlParentKey
@@ -5409,19 +5597,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeter
   nameWithType: EisFacilitySiteRecord.AreaWithinPerimeter
-- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
-  name: AreaWithinPerimeterUnitofMeasureCode
-  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitofMeasureCode
-  commentId: P:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
-  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
-  nameWithType: EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
-- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode*
-  name: AreaWithinPerimeterUnitofMeasureCode
-  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitofMeasureCode_
-  commentId: Overload:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
+  name: AreaWithinPerimeterUnitOfMeasureCode
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitOfMeasureCode
+  commentId: P:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
+  nameWithType: EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode*
+  name: AreaWithinPerimeterUnitOfMeasureCode
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AreaWithinPerimeterUnitOfMeasureCode_
+  commentId: Overload:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
   isSpec: "True"
-  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
-  nameWithType: EisFacilitySiteRecord.AreaWithinPerimeterUnitofMeasureCode
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
+  nameWithType: EisFacilitySiteRecord.AreaWithinPerimeterUnitOfMeasureCode
 - uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.AttachmentFileContentTypeCode
   name: AttachmentFileContentTypeCode
   href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_AttachmentFileContentTypeCode
@@ -5721,6 +5909,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.LongitudeMeasure
   nameWithType: EisFacilitySiteRecord.LongitudeMeasure
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName
+  name: OwnerName
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_OwnerName
+  commentId: P:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName
+  nameWithType: EisFacilitySiteRecord.OwnerName
+- uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName*
+  name: OwnerName
+  href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_OwnerName_
+  commentId: Overload:CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.OwnerName
+  nameWithType: EisFacilitySiteRecord.OwnerName
 - uid: CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.PercentofAreaProducingEmissions
   name: PercentofAreaProducingEmissions
   href: api/CaisToNodeCore.Models.EisSnapshot.EisFacilitySiteRecord.html#CaisToNodeCore_Models_EisSnapshot_EisFacilitySiteRecord_PercentofAreaProducingEmissions
@@ -9265,6 +9466,19 @@ references:
   isSpec: "True"
   fullName: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.LongitudeMeasure
   nameWithType: NodeFacilitySiteRecord.LongitudeMeasure
+- uid: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName
+  name: OrganizationFormalName
+  href: api/CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.html#CaisToNodeCore_Models_Node_NodeFacilitySiteRecord_OrganizationFormalName
+  commentId: P:CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName
+  fullName: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName
+  nameWithType: NodeFacilitySiteRecord.OrganizationFormalName
+- uid: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName*
+  name: OrganizationFormalName
+  href: api/CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.html#CaisToNodeCore_Models_Node_NodeFacilitySiteRecord_OrganizationFormalName_
+  commentId: Overload:CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName
+  isSpec: "True"
+  fullName: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.OrganizationFormalName
+  nameWithType: NodeFacilitySiteRecord.OrganizationFormalName
 - uid: CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.PercentofAreaProducingEmissions
   name: PercentofAreaProducingEmissions
   href: api/CaisToNodeCore.Models.Node.NodeFacilitySiteRecord.html#CaisToNodeCore_Models_Node_NodeFacilitySiteRecord_PercentofAreaProducingEmissions

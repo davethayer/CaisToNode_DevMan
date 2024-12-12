@@ -136,6 +136,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          </li>
+                          <li class="">
                             <span class="expand-stub"></span>
                             <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
 
@@ -301,30 +304,54 @@
 <section id="tabpanel_1_sql" role="tabpanel" data-tab="sql" aria-hidden="true" hidden="hidden">
 <h1 id="releasepointsql">ReleasePoint.sql</h1>
 <p>Resource: <a href="../api/CaisToNodeCore.Models.Cais.CaisSQL.html#CaisToNodeCore_Models_Cais_CaisSQL_ReleasePoint"><code>CaisToNodeCore.Models.Cais.CaisSQL.ReleasePoint</code></a></p>
-<pre><code class="lang-sql">-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
-SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
-            + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
-       ,PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)),4) 
-            + '-S' + RIGHT('000' + LTRIM(RTRIM(ST.stk_afsid)),3) AS ReleasePointIdentifier
-       ,LTRIM(RTRIM(TY.nei_code)) AS EisStackTypeCode
-       ,ST.stk_plumht AS ReleasePointFugitiveHeightMeasure
-       ,ST.stk_height AS ReleasePointStackHeightMeasure
-       ,ST.stk_diam AS ReleasePointStackDiameterMeasure
-       ,ST.stk_gasvel AS ReleasePointExitGasVelocityMeasure
-       ,ST.stk_gasrat AS ReleasePointExitGasFlowRateMeasure
-       ,CASE WHEN ST.stk_gasrat &gt; 0 THEN 'ACFM' ELSE '' END as ReleasePointExitGasFlowRateUnitofMeasureCode
-       ,ST.stk_gastem AS ReleasePointExitGasTemperatureMeasure
+<pre><code class="lang-sql">-- ReleasePoint.sql.
+-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1;-- Uncomment for testing
+
+WITH DataYears
+AS (
+    SELECT DISTINCT PY.pla_id
+        , Higest.plyear_id
+        , Higest.plyear
+    FROM plyear PY
+    CROSS APPLY (
+        SELECT TOP 1 plyear_id
+            , plyear
+        FROM plyear
+        WHERE pla_id = PY.pla_id
+            AND plyear &lt;= @InventoryYear
+        ORDER BY plyear DESC
+        ) AS Higest
+    )
+SELECT 'CO00000008' + PL.PLA_A_CNTY + '0' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
+    , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)), 4) + '-S' + RIGHT('000' + LTRIM(RTRIM(ST.stk_afsid)), 3) AS ReleasePointIdentifier
+    , TRIM(ST.stk_desc) AS ReleasePointDescription
+    , LTRIM(RTRIM(TY.nei_code)) AS EisStackTypeCode
+    , ST.stk_plumht AS ReleasePointFugitiveHeightMeasure
+    , ST.stk_height AS ReleasePointStackHeightMeasure
+    , ST.stk_diam AS ReleasePointStackDiameterMeasure
+    , ST.stk_gasvel AS ReleasePointExitGasVelocityMeasure
+    , ST.stk_gasrat AS ReleasePointExitGasFlowRateMeasure
+    , CASE 
+        WHEN ST.stk_gasrat &gt; 0
+            THEN 'ACFM'
+        ELSE ''
+        END AS ReleasePointExitGasFlowRateUnitofMeasureCode
+    , ST.stk_gastem AS ReleasePointExitGasTemperatureMeasure
+    , TRIM(TRIM(SC.stc_cline1) + ' ' + TRIM(SC.stc_cline2) + ' ' + TRIM(SC.stc_cline3) + ' ' + TRIM(SC.stc_cline4)) AS ReleasePointComment
+    , - (Floor(ST.stk_long / 10000) + (Floor(ST.stk_long / 100) % 100) / 60.0 + (ST.stk_long % 100) / 3600.0) AS LongitudeMeasure
+    , Floor(ST.stk_lat / 10000) + (Floor(ST.stk_lat / 100) % 100) / 60.0 + (ST.stk_lat % 100) / 3600.0 AS LatitudeMeasure
 FROM cais..Plant AS PL
-       JOIN cais..plyear AS PY
-         ON PY.pla_id = PL.PLA_ID
-            AND PY.plyear = (SELECT Max(PY1.plyear)
-                             FROM   cais..plyear AS PY1
-                             WHERE  PY1.pla_id = PL.PLA_ID
-                                    AND PY1.plyear &lt;= @InventoryYear)
-       JOIN cais..stacks as ST 
-         ON ST.plyear_id = PY.plyear_id
-       LEFT JOIN cais..r_sktype AS TY 
-         ON TY.code = ST.stk_typcod
+JOIN DataYears AS DY
+    ON DY.pla_id = PL.PLA_ID
+JOIN cais..stacks AS ST
+    ON ST.plyear_id = DY.plyear_id
+LEFT JOIN cais..r_sktype AS TY
+    ON TY.code = ST.stk_typcod
+LEFT JOIN cais..st_comm AS SC
+    ON SC.pla_id = DY.pla_id
+        AND SC.stk_afsid = ST.stk_afsid
+        AND SC.stc_comnum = '001'
+        AND SC.stc_comtyp = 'E'
 WHERE PL.PLA_A_CNTY NOT IN ('000', '778', '888')
 ORDER BY ReleasePointIdentifier
 </code></pre><!-- regex to replace url "file://.*(/api/.*).html#(.*_Node(\w*)Record_(\w*))" with " | [$3.$4](..$1.yml#$2)" -->

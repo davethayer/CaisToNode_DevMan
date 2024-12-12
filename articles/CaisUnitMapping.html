@@ -136,6 +136,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          </li>
+                          <li class="">
                             <span class="expand-stub"></span>
                             <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
 
@@ -285,7 +288,24 @@
 <section id="tabpanel_1_sql" role="tabpanel" data-tab="sql" aria-hidden="true" hidden="hidden">
 <h1 id="emissionsunitsql">EmissionsUnit.sql</h1>
 <p>Resource: <a href="../api/CaisToNodeCore.Models.Cais.CaisSQL.html#CaisToNodeCore_Models_Cais_CaisSQL_EmissionsUnit"><code>CaisToNodeCore.Models.Cais.CaisSQL.EmissionsUnit</code></a></p>
-<pre><code class="lang-sql">-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
+<pre><code class="lang-sql">-- EmissionsUnit.sql
+-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
+
+WITH DataYears
+AS (
+    SELECT DISTINCT PY.pla_id
+        , Higest.plyear_id
+        , Higest.plyear
+    FROM plyear PY
+    CROSS APPLY (
+        SELECT TOP 1 plyear_id
+            , plyear
+        FROM plyear
+        WHERE pla_id = PY.pla_id
+            AND plyear &lt;= @InventoryYear
+        ORDER BY plyear DESC
+        ) AS Higest
+    )
 SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
             + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
        ,PL.PLA_A_CNTY + '-' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4)
@@ -294,18 +314,15 @@ SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
        ,TY.PTY_EIS_CODE AS UnitTypeCode
        ,PH.poh_desrat AS UnitDesignCapacity
        ,PH.poh_desunt AS UnitDesignCapacityUnitofMeasureCode
+       ,PT.Comment AS UnitComment
 FROM cais..Plant AS PL
        JOIN  cais..Point AS PT 
          ON PT.POI_PLA_ID = PL.PLA_ID
-       JOIN cais..plyear AS PY
-         ON PY.pla_id = PL.PLA_ID
-            AND PY.plyear = (SELECT Max(PY1.plyear)
-                             FROM   cais..plyear AS PY1
-                             WHERE  PY1.pla_id = PL.PLA_ID
-                                    AND PY1.plyear &lt;= @InventoryYear)
+       JOIN DataYears AS DY
+         ON DY.pla_id = PL.PLA_ID
        JOIN cais..PointHis AS PH
          ON PH.poi_id = PT.POI_ID 
-            AND PH.plyear_id = PY.plyear_id
+            AND PH.plyear_id = DY.plyear_id
        LEFT JOIN cais..PoinType AS TY
          ON PT.POI_TYPE = TY.PTY_CODE
 WHERE PL.PLA_A_CNTY NOT IN ('000', '778', '888')

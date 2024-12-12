@@ -136,6 +136,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="IdentifierMapping.html" title="Identifier Cross Reference" class="">Identifier Cross Reference</a>
+                          </li>
+                          <li class="">
                             <span class="expand-stub"></span>
                             <a href="CaisPlantMapping.html" title="CAIS Plant" class="">CAIS Plant</a>
 
@@ -335,80 +338,132 @@
 <section id="tabpanel_1_sql" role="tabpanel" data-tab="sql" aria-hidden="true" hidden="hidden">
 <h1 id="processpollutantsql">ProcessPollutant.sql</h1>
 <p>Resource: <a href="../api/CaisToNodeCore.Models.Cais.CaisSQL.html#CaisToNodeCore_Models_Cais_CaisSQL_ProcessPollutant"><code>CaisToNodeCore.Models.Cais.CaisSQL.ProcessPollutant</code></a></p>
-<pre><code class="lang-sql">-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1; -- Uncomment for testing
+<pre><code class="lang-sql">-- ProcessPollutant.sql
+-- DECLARE @InventoryYear CHAR(4) = Year(Getdate()) - 1;-- Uncomment for testing
 
-WITH ProcessPte as (SELECT prpoplt_id, pre_emis1 from cais.dbo.ProcessEmissions where pre_etype = 'POT' AND pre_emun1 = 'TY' )
-, ProcessLimit as (SELECT prpoplt_id, pre_emis1 from cais.dbo.ProcessEmissions where pre_etype = 'ALL' AND pre_emun1 = 'TY' )
-, UnitPte as (SELECT poh_id, plt_id, phe_emis1 from cais.dbo.poi_emis where phe_etype = 'POT' AND phe_emun1 = 'TY' )
-, UnitLimit as (SELECT poh_id, plt_id, phe_emis1 from cais.dbo.poi_emis where phe_etype = 'ALL' AND phe_emun1 = 'TY' )
-, InvPlYr as (SELECT pla_id, Max(plyear) as plyear FROM cais.dbo.plyear WHERE plyear &lt;= @InventoryYear GROUP BY pla_id)
-, InvPlYrId as ( SELECT PY.pla_id, PY.plyear_id from cais.dbo.plyear as PY join InvPlYr as IY on PY.pla_id = IY.pla_id and PY.plyear = IY.plyear)
-SELECT 'CO00000008' + PL.PLA_A_CNTY + '0'
-            + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
-       , PL.PLA_A_CNTY AS CountyFIPSCode
-       , PL.PLA_A_CNTY + '-' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4)
-            + '-' + RIGHT('000' + Ltrim(Rtrim(PT.POI_A_PNT)), 3) AS UnitIdentifier
-       , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)),4) 
-            + '-' + RIGHT('000' + LTRIM(RTRIM(PT.POI_A_PNT)),3) + '-' 
-            + RIGHT('00' + LTRIM(RTRIM(PR.pro_afsid)), 2) AS ProcessIdentifier
-       , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)),4) 
-            + '-S' + RIGHT('000' + LTRIM(RTRIM(ST.stk_afsid)),3) AS ReleasePointIdentifier
-       , RTRIM(CT.nei_code) AS PollutantCode
-       , RTRIM(PL.PLA_NAME) AS FacilitySiteName
-       , PP.prp_ceqeff AS PercentControlMeasuresReductionEfficiency
-       , COALESCE(CE1.code_afs,'000') AS ControlMeasureCodePrimary
-       , CASE WHEN CE1.code_afs &lt;&gt; CE2.code_afs THEN CE2.code_afs ELSE '000' END
-            AS ControlMeasureCodeSecondary
-       , CAST(SUM(PE.pre_emis1) AS DECIMAL(12,4)) AS TotalEmissions
-       , MC.afs_method AS EmissionCalculationMethodCode
-       , PT.POI_TYPE AS PtsPointTypeCode
-       , CAST(MAX(PTE.phe_emis1) AS DECIMAL(12,4)) AS UnitPte
-       , CAST(MAX(LIM.phe_emis1) AS DECIMAL(12,4)) AS UnitLimit
-       , CAST(SUM(PPT.pre_emis1) AS DECIMAL(12,4)) AS ProcessPte
-       , CAST(SUM(PPL.pre_emis1) AS DECIMAL(12,4)) AS ProcessLimit
-       , MAX(PH.poh_hryear) AS UnitHoursPerYear
+WITH DataYears
+AS (
+    SELECT DISTINCT PY.pla_id
+        , Higest.plyear_id
+        , Higest.plyear
+    FROM plyear PY
+    CROSS APPLY (
+        SELECT TOP 1 plyear_id
+            , plyear
+        FROM plyear
+        WHERE pla_id = PY.pla_id
+            AND plyear &lt;= @InventoryYear
+        ORDER BY plyear DESC
+        ) AS Higest
+    )
+    , ProcessPte
+AS (
+    SELECT prpoplt_id
+        , pre_emis1
+    FROM cais.dbo.ProcessEmissions
+    WHERE pre_etype = 'POT'
+        AND pre_emun1 = 'TY'
+    )
+    , ProcessLimit
+AS (
+    SELECT prpoplt_id
+        , pre_emis1
+    FROM cais.dbo.ProcessEmissions
+    WHERE pre_etype = 'ALL'
+        AND pre_emun1 = 'TY'
+    )
+    , UnitPte
+AS (
+    SELECT poh_id
+        , plt_id
+        , phe_emis1
+    FROM cais.dbo.poi_emis
+    WHERE phe_etype = 'POT'
+        AND phe_emun1 = 'TY'
+    )
+    , UnitLimit
+AS (
+    SELECT poh_id
+        , plt_id
+        , phe_emis1
+    FROM cais.dbo.poi_emis
+    WHERE phe_etype = 'ALL'
+        AND phe_emun1 = 'TY'
+    )
+SELECT 'CO00000008' + PL.PLA_A_CNTY + '0' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) AS FacilitySiteIdentifier
+    , PL.PLA_A_CNTY AS CountyFIPSCode
+    , PL.PLA_A_CNTY + '-' + RIGHT('000' + Ltrim(Rtrim(PL.PLA_A_PLNT)), 4) + '-' + RIGHT('000' + Ltrim(Rtrim(PT.POI_A_PNT)), 3) AS UnitIdentifier
+    , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)), 4) + '-' + RIGHT('000' + LTRIM(RTRIM(PT.POI_A_PNT)), 3) + '-' + RIGHT('00' + LTRIM(RTRIM(PR.pro_afsid)), 2) AS ProcessIdentifier
+    , PL.PLA_A_CNTY + '-' + RIGHT('000' + LTRIM(RTRIM(PL.PLA_A_PLNT)), 4) + '-S' + RIGHT('000' + LTRIM(RTRIM(ST.stk_afsid)), 3) AS ReleasePointIdentifier
+    , RTRIM(CT.nei_code) AS PollutantCode
+    , RTRIM(PL.PLA_NAME) AS FacilitySiteName
+    , PP.prp_ceqeff AS PercentControlMeasuresReductionEfficiency
+    , COALESCE(CE1.code_afs, '000') AS ControlMeasureCodePrimary
+    , CASE 
+        WHEN CE1.code_afs &lt;&gt; CE2.code_afs
+            THEN CE2.code_afs
+        ELSE '000'
+        END AS ControlMeasureCodeSecondary
+    , CAST(SUM(PE.pre_emis1) AS DECIMAL(12, 4)) AS TotalEmissions
+    , MC.afs_method AS EmissionCalculationMethodCode
+    , PT.POI_TYPE AS PtsPointTypeCode
+    , CAST(MAX(PTE.phe_emis1) AS DECIMAL(12, 4)) AS UnitPte
+    , CAST(MAX(LIM.phe_emis1) AS DECIMAL(12, 4)) AS UnitLimit
+    , CAST(SUM(PPT.pre_emis1) AS DECIMAL(12, 4)) AS ProcessPte
+    , CAST(SUM(PPL.pre_emis1) AS DECIMAL(12, 4)) AS ProcessLimit
+    , MAX(PH.poh_hryear) AS UnitHoursPerYear
 FROM cais.dbo.PointHis AS PH
-    JOIN CAIS.dbo.Point AS PT
+JOIN CAIS.dbo.Point AS PT
     ON PT.POI_ID = PH.poi_id
-    JOIN InvPlYrId as PY
-    ON PH.plyear_id = PY.plyear_id
-    JOIN CAIS.dbo.Plant AS PL
-    ON PL.PLA_ID = py.pla_id
-    JOIN CAIS..process AS PR
+JOIN DataYears AS DY
+    ON PH.plyear_id = DY.plyear_id
+JOIN CAIS.dbo.Plant AS PL
+    ON PL.PLA_ID = DY.pla_id
+JOIN CAIS..process AS PR
     ON PR.poh_id = PH.poh_id
-    LEFT JOIN dbo.Stacks AS ST
+LEFT JOIN dbo.Stacks AS ST
     ON PR.stkyear_id = ST.stkyear_id
-    JOIN dbo.pr_pol AS PP
+JOIN dbo.pr_pol AS PP
     ON PP.pro_id = PR.pro_id
-    JOIN dbo.pr_emis AS PE
+JOIN dbo.pr_emis AS PE
     ON PP.prpoplt_id = PE.prpoplt_id
-    LEFT JOIN ProcessPte AS PPT
+LEFT JOIN ProcessPte AS PPT
     ON PP.prpoplt_id = PPT.prpoplt_id
-    LEFT JOIN ProcessLimit AS PPL
+LEFT JOIN ProcessLimit AS PPL
     ON PP.prpoplt_id = PPL.prpoplt_id
-    LEFT JOIN dbo.cas_tbl AS CT
+LEFT JOIN dbo.cas_tbl AS CT
     ON PP.plt_id = CT.Plt_ID
-    LEFT JOIN dbo.r_method AS MC
+LEFT JOIN dbo.r_method AS MC
     ON MC.method = PE.pre_emmc1
-    LEFT JOIN dbo.r_cequip AS CE1
+LEFT JOIN dbo.r_cequip AS CE1
     ON CE1.code = PP.prp_priceq
-    LEFT JOIN dbo.r_cequip AS CE2
+LEFT JOIN dbo.r_cequip AS CE2
     ON CE2.code = PP.prp_secceq
-    LEFT JOIN UnitPte AS PTE
+LEFT JOIN UnitPte AS PTE
     ON PTE.poh_id = PH.poh_id
         AND PTE.plt_id = PP.plt_id
-    LEFT JOIN UnitLimit AS LIM
+LEFT JOIN UnitLimit AS LIM
     ON LIM.poh_id = PH.poh_id
         AND LIM.plt_id = PP.plt_id
 WHERE PL.PLA_A_CNTY NOT IN ('000', '778', '888')
     AND COALESCE(CT.nei_code, '') != ''
     AND PE.pre_etype = 'EST'
     AND PE.pre_emmc1 NOT IN ('7', '7A')
-    AND PE.pre_emis1 &gt; 0 
-
-GROUP BY PL.PLA_A_CNTY, PL.PLA_A_PLNT, PT.POI_A_PNT, PT.POI_TYPE, PR.pro_afsid, ST.stk_afsid, PL.PLA_NAME, PP.prp_ceqeff, CE1.code_afs, CE2.code_afs, CT.nei_code, MC.afs_method
-
-ORDER BY ProcessIdentifier, PollutantCode
+    AND PE.pre_emis1 &gt; 0
+GROUP BY PL.PLA_A_CNTY
+    , PL.PLA_A_PLNT
+    , PT.POI_A_PNT
+    , PT.POI_TYPE
+    , PR.pro_afsid
+    , ST.stk_afsid
+    , PL.PLA_NAME
+    , PP.prp_ceqeff
+    , CE1.code_afs
+    , CE2.code_afs
+    , CT.nei_code
+    , MC.afs_method
+ORDER BY ProcessIdentifier
+    , PollutantCode
 </code></pre><!-- regex to replace url "file://.*(/api/.*).html#(.*_Node(\w*)Record_(\w*))" with " | [$3.$4](..$1.yml#$2)" -->
 </section>
 </div>
